@@ -3,8 +3,11 @@ import React from "react";
 const Order = (props) => {
 
   //sort in numerical order (main, side, drink, dessert)
-  //revise!!
+  //revise if don't want index to show on orders
   let orderedItems = props.items.sort((a, b) => a.split(" ")[0] - b.split(" ")[0])
+
+  //map over orderedItems to get quantities
+  //ex: [{3: '1 Eggs, 2: '2 Toast', 2: '3 Coffee'}]
   
   return (<div>
     {props.items.length > 0 ? 

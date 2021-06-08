@@ -22,15 +22,9 @@ class App extends Component {
   }
 
   addToOrder = (index, item) => {
-    if (this.state.items.includes(item[0])){
-      let count = this.state.items.map(i =>  i === item[0]).length
-      this.setState({
-        items: [...this.state.items, `${count} ${item[0]}`]
+    this.setState({
+        items: [...this.state.items, `${index}. ${item[0]}`]
       })
-    }
-    else this.setState({
-      items: [...this.state.items, `${item[0]}`]
-    })
   }
 
 
