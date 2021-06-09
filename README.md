@@ -8,6 +8,8 @@ When the order is submitted, the user will receive an error message if the order
 
 ## Dependencies
 
+Install dependencies with  `npm i`
+
 react, react-dom, testing-library/jest-dom, testing-library/react, testing-library/user-event
 
 ### `npm start`

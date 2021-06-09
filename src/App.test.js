@@ -102,8 +102,6 @@ describe('App', () => {
     const submitButton = screen.getByText(/Submit!/)
     expect(submitButton).toBeInTheDocument()
 
-    // jest.spyOn(window, 'alert').mockImplementation(() => {});
-
     window.alert = jest.fn()
 
     fireEvent.click(submitButton)
