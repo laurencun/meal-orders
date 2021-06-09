@@ -15,7 +15,7 @@ const Menu = (props) => {
 
   return (<div>
     
-    <h1>{props.meal !== '' ? props.meal : null}</h1>
+    <h1>{props.meal !== '' ? `${props.meal} menu`: null}</h1>
 
     {menuItems.map((value, index) => {
       let item = Object.values(menuItems[index])
